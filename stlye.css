@@ -7,21 +7,95 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-:root {
-    --verde-claro: #088f9d;
-    --azul-clarinho: #7cccdd;
-    --verde-black: #05535b;
-    --azul: #55c0d6;
-    --vermelho: #b02c1c;
-    --verde: #0b4f39;
-    --marrom: #b86f3f;
-    --cinza: #c0cfd2;
-    --verde-acinzentado: #68a3a1;
-    --preto: #292a2f;
-    --roxo: #753a98;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Verdana', sans-serif; 
+    background-color: #f5f5fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+:root {
+    --header-bg-color: #FF6347; 
+    --main-bg-color: #fff;
+    --segunda-bg-color: #87CEEB; 
+    --primary-text-color: #333;
+    --secondary-text-color: #555;
+}
+
 
 header {
-    background-color: #05535b;
-
+    background-color: var(--header-bg-color);
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+
+main {
+    padding: 2rem;
+    background-color: var(--main-bg-color);
+}
+
+
+.primeira {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.primeira p {
+    max-width: 50%;
+}
+
+.primeira img {
+    max-width: 20rem;
+    margin-left: 1rem;
+}
+
+
+.segunda {
+    background-color: var(--segunda-bg-color);
+    height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.segunda img {
+    width: 8rem;
+    height: 8rem; 
+}
+
+.segunda p {
+    max-width: 30%;
+    text-align: center;
+}
+
+
+.terceira {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.terceira img {
+    width: 10rem;
+    height: 10rem; 
